@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: InsurencePremiumPrediction
+Version: 0.0.1
+Author: Vikash Dwivedi
+Author-email: mrvikashdwivedi021@gmail.com
+Requires-Dist: flask
+Requires-Dist: scikit-learn
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: jupyter
