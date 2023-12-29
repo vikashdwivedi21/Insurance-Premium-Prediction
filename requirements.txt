@@ -4,5 +4,7 @@ pandas
 numpy
 matplotlib
 jupyter
+seaborn
+
 
 -e .
