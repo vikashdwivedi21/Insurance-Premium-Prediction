@@ -7,6 +7,8 @@ import pandas as pd
 
 from src.componants.data_ingestion import DataIngestion
 from src.componants.data_transformation import DataTransformation
+from src.componants.model_trainer import ModelTrainer
+
 
 
 
@@ -17,4 +19,7 @@ if __name__ == "__main__":
 
     data_transfromation = DataTransformation()
     train_arr, test_arr, _ = data_transfromation.init_data_transformation(train_data_path, test_data_path)
+
+    model_trainer = ModelTrainer()
+    model_trainer.init_model_training(train_arr,test_arr)
    
