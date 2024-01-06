@@ -1,0 +1,71 @@
+import os
+import sys
+from src.exception import CustomException
+from src.logger import logging
+from src.utils import load_object
+
+import pandas as pd
+
+
+class PredictPipeline:
+    def __init__(self):
+        pass
+
+    def predict(self,features):
+        
+        try:
+            preprocessor_path = os.path.join('artifacts','preprocessor.pkl')
+            model_path = os.path.join('artifacts','model.pkl')
+
+            preprocessor = load_object(preprocessor_path)
+            model  = load_object(model_path)
+            data_scaled = preprocessor.transform(features)
+
+            pred = model.predict(data_scaled)
+            return pred
+
+
+        except Exception as e:
+            logging.info('Exception occured in prediction pipeline')
+            raise CustomException(e,sys)
+        
+
+
+
+class CustomData:
+    def __init__(self, age: float, sex: str, bmi: float, children: float, smoker: str, region: str):
+
+        # initialization
+        self.age = age
+        self.sex = sex
+        self.bmi = bmi
+        self.children = children
+        self.smoker = smoker
+        self.region = region
+        
+
+    def get_data_as_dataframe(self):
+        """
+        Converts input data into a DataFrame object in Python.
+        """
+        try:
+            logging.info("Converting input data to Dataframe")
+            custom_data_input_dict = {
+                "age": [self.age],
+                "sex": [self.sex],
+                "bmi": [self.bmi],
+                "children": [self.children],
+                "smoker": [self.smoker],
+                "region": [self.region]
+            }
+            df = pd.DataFrame(custom_data_input_dict)
+            logging.info("Dataframe generated")
+            return df
+        except Exception as e:
+            logging.info(
+                "Exception occurred during get_data_as_dataframe method")
+            raise CustomException(e, sys)
+
+
+
+

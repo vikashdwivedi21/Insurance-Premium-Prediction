@@ -51,3 +51,16 @@ def evaluate_model(X_train,y_train,X_test,y_test,models):
         logging.info("Exception is occur in model evaluation ")
         raise CustomException(e,sys)
     
+
+
+# Function for loading the object  in pickel file
+def load_object(file_path):
+    try:
+        with open(file_path,'rb') as file_obj:
+            return pickle.load(file_obj)
+         
+
+
+    except Exception as e:
+        logging.info('Exception occured in load object function stage in utils file')
+        raise CustomException(e,sys)
