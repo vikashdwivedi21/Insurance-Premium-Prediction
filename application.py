@@ -15,7 +15,7 @@ def home_page():
 @app.route('/predict',methods= ['GET','POST'])
 def predict_datapoint():
     if request.method == 'GET':
-        return render_template('form.html')
+        return render_template('prediction.html')
     
     elif request.method == 'POST':
         data = CustomData(
@@ -34,7 +34,7 @@ def predict_datapoint():
 
         results = round(pred[0],2)
 
-        return  render_template('form.html',final_result = results)
+        return  render_template('prediction.html',final_result = results)
     
     else:
         return "Invalid Request Method"

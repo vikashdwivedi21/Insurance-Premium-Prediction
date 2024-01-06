@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Insurance Premium Prediction Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    
+</head>
+
+
+<body>
+  
+    <div class= "head">
+      <h1>Predict Your Insurance Premium </h1>
+  </div>
+    
+    <form action="{{ url_for('predict_datapoint') }}" method="POST">
+        
+        <div class="form-group">
+            <label for="age">Age:</label>
+            <input type="text" name="age" id="age" placeholder="Enter Your Age">
+        </div>
+
+        <div class="form-group">
+            <label for="bmi">BMI:</label>
+            <input type="text" name="bmi" id="bmi" placeholder="Enter Your BMI">
+        </div>
+
+        <div class="form-group">
+            <label for="children">Children:</label>
+            <input type="text" name="children" id="children" placeholder="How Many Children You Have">
+        </div>
+
+        <div class="form-group">
+            <label for="sex">Sex:</label>
+            <select id="sex" name="sex">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="smoker">Smoker:</label>
+            <select id="smoker" name="smoker">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="region">Region:</label>
+            <select id="region" name="region">
+                <option value="northeast">Northeast</option>
+                <option value="northwest">Northwest</option>
+                <option value="southeast">Southeast</option>
+                <option value="southwest">Southwest</option>
+            </select>
+        </div>
+
+        <h2 class="btn"><button type="submit" class="btn btn-primary btn-block btn-large">Predict</button></h2>
+    </form>
+          <br>
+
+    <h2 class="pre">
+        Your expense for Insurense prediction is {{final_result}}
+    </h2>
+    
+</body>
+
+</html>
