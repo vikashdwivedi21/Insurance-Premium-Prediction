@@ -88,3 +88,6 @@ pip install -r requirements.txt
 ```bash
 python application.py
 ```
+
+## Author : Vikash Dwivedi
+LinkedIn : ![linkedIn](linkedin.com/in/vikash-dwivedi)
