@@ -32,12 +32,12 @@ def predict_datapoint():
         pred = predict_pipeline.predict(final_new_data)
 
         results = round(pred[0],2)
-        return render_template('prediction.html',final_result = results)
+        return render_template('result.html',final_result = results)
     
     else:
         return "Invalid Request Method"
 
 
 if __name__ == "__main__":
-
+ 
     app.run(host='0.0.0.0', debug=True)
