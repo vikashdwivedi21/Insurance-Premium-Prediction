@@ -90,4 +90,4 @@ python application.py
 ```
 
 ## Author : Vikash Dwivedi 
-[linkedIn](linkedin.com/in/vikash-dwivedi)
+[linkedIn](https://linkedin.com/in/vikash-dwivedi)
