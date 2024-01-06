@@ -30,9 +30,10 @@ Handle categorical variables through encoding or other techniques.
 Scale numerical features if necessary to ensure all features contribute equally to model training.
 
 **4. Model Building:**
+I have train the model using diffrent types of Machine Learning algoriths such as Linear Regresson, Lasso , Ridge, RandomForest Regressor, Adaboost Regressor, GradientBoost Regressor, 
 
-**6. Model Evaluation**:
-
+**5. Model Evaluation**
+After training on a dedicated set, the model's effectiveness on unseen data is measured using specific metrics (e.g., accuracy, precision, recall). This ensures the model's ability to generalize and make accurate predictions in real-world scenarios. 
 
 Below table show the model performance:
 
@@ -45,3 +46,9 @@ Below table show the model performance:
 | Random Forest Regressor | 4758.80 | 2583.506 | 85.31 |
 | Adaboost Regressor | 5048.66 | 3937.046 | 83.47 |
 | Gradient Boost Regressor | 5882.527 | 3339.62 | 77.56 |
+
+
+## Tools and Technologies used
+|------|-------|-------|-------|
+| python | Anaconda | Pandas || Numpy | 
+| Matplotlib | Seaborn| | Flask | GitHub | 
