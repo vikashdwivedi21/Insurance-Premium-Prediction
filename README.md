@@ -50,4 +50,11 @@ Below table show the model performance:
 ## Tools and Technologies used
  ![Tools and Technologies](https://github.com/vikashdwivedi21/Insurance-Premium-Prediction/blob/master/images/Technologies%20used.png)
 
- 
+ ## Home Page
+![Home](https://github.com/vikashdwivedi21/Insurance-Premium-Prediction/blob/master/images/UI/Home.png)
+
+## Prediction Page
+![Prediction](https://github.com/vikashdwivedi21/Insurance-Premium-Prediction/blob/master/images/UI/Prediction.png)
+
+## Result
+![Result](https://github.com/vikashdwivedi21/Insurance-Premium-Prediction/blob/master/images/UI/Result.png)
