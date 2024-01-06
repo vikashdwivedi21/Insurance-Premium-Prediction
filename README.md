@@ -48,4 +48,4 @@ Below table show the model performance:
 | Gradient Boost Regressor | 5882.527 | 3339.62 | 77.56 |
 
 
- ! [Tools and Technologies](images\Technologies used.png)
+ ![Tools and Technologies](https://github.com/vikashdwivedi21/Insurance-Premium-Prediction/blob/master/images/Technologies%20used.png)
