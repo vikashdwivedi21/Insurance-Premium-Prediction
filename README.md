@@ -58,3 +58,33 @@ Below table show the model performance:
 
 ## Result
 ![Result](https://github.com/vikashdwivedi21/Insurance-Premium-Prediction/blob/master/images/UI/Result.png)
+
+# How to Run?
+ 
+ ### STEPS:
+
+Clone the repository
+
+```bash
+Project repo: https://github.com/vikashdwivedi21/Insurance-Premium-Prediction.git
+```
+
+### STEP 01- Create a conda environment after opening the repository
+
+```bash
+conda create -p env python==3.9 -y
+```
+
+```bash
+conda activate env/
+```
+
+### STEP 02- install the requirements
+```bash
+pip install -r requirements.txt
+```
+
+### Step 03- Run application.py
+```bash
+python application.py
+```
