@@ -89,4 +89,5 @@ pip install -r requirements.txt
 python application.py
 ```
 
-## Author : Vikash Dwivedi !(linkedin.com/in/vikash-dwivedi)
+## Author : Vikash Dwivedi 
+!(linkedin.com/in/vikash-dwivedi)
