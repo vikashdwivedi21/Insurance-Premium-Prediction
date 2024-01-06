@@ -48,7 +48,4 @@ Below table show the model performance:
 | Gradient Boost Regressor | 5882.527 | 3339.62 | 77.56 |
 
 
-## Tools and Technologies used
-|------|-------|-------|-------|
-| python | Anaconda | Pandas || Numpy | 
-| Matplotlib | Seaborn| | Flask | GitHub | 
+ ! [Tools and Technologies](images\Technologies used.png)
